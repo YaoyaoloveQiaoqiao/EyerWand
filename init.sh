@@ -2,6 +2,9 @@ if [ -d ./Eyer3rdpart ];then
     rm -rf Eyer3rdpart
 fi
 
+basepath=$(cd `dirname $0`; pwd)
+echo ${basepath}
+
 git clone https://github.com/redknotmiaoyuqiao/Eyer3rdpart
 
 cd Eyer3rdpart/x264/
@@ -24,6 +27,13 @@ make install
 
 cd ../../
 
+cd Eyer3rdpart/freetype-2.10.0
+./configure --enable-static --enable-shared --prefix=${basepath}/Eyer3rdpart/freetype-2.10.0/freetype_install
+make clean
+make -j4
+make install
+
+cd ../../
 
 cd Eyer3rdpart/glfw-3.3.2
 mkdir build
@@ -45,7 +55,7 @@ mkdir Lib
 cp -r Eyer3rdpart/x264/x264_install Lib/x264_install
 cp -r Eyer3rdpart/ffmpeg_3.2.14/ffmpeg_install Lib/ffmpeg_install
 cp -r Eyer3rdpart/glfw-3.3.2/glfw_install Lib/glfw_install
-
+cp -r Eyer3rdpart/freetype-2.10.0/freetype_install Lib/freetype_install
 
 
 
