@@ -14,9 +14,7 @@ make clean
 make -j4
 make install
 
-
 cd ../../
-
 
 cd Eyer3rdpart/ffmpeg_3.2.14/
 ./configure --enable-static --enable-shared --prefix=./ffmpeg_install --enable-libx264 --enable-gpl --extra-cflags=-I../x264/x264_install/include/ --extra-ldflags=-L../x264/x264_install/lib/ 
@@ -29,6 +27,14 @@ cd ../../
 
 cd Eyer3rdpart/freetype-2.10.0
 ./configure --enable-static --enable-shared --prefix=${basepath}/Eyer3rdpart/freetype-2.10.0/freetype_install
+make clean
+make -j4
+make install
+
+cd ../../
+
+cd Eyer3rdpart/libpng-1.6.37
+./configure --prefix=${basepath}/Eyer3rdpart/libpng-1.6.37/libpng_install
 make clean
 make -j4
 make install
@@ -56,7 +62,7 @@ cp -r Eyer3rdpart/x264/x264_install Lib/x264_install
 cp -r Eyer3rdpart/ffmpeg_3.2.14/ffmpeg_install Lib/ffmpeg_install
 cp -r Eyer3rdpart/glfw-3.3.2/glfw_install Lib/glfw_install
 cp -r Eyer3rdpart/freetype-2.10.0/freetype_install Lib/freetype_install
-
+cp -r Eyer3rdpart/libpng-1.6.37/libpng_install Lib/libpng_install
 
 
 
