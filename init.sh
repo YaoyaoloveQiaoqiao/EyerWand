@@ -17,7 +17,6 @@ make install
 
 cd ../../
 
-
 cd Eyer3rdpart/ffmpeg_3.2.14/
 ./configure --enable-static --enable-shared --prefix=./ffmpeg_install --enable-libx264 --enable-gpl --extra-cflags=-I../x264/x264_install/include/ --extra-ldflags=-L../x264/x264_install/lib/ 
 
