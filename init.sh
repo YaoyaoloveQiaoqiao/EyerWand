@@ -51,7 +51,7 @@ make install
 
 cd ../../
 
-cd Eyer3rdpart/libyuv
+cd ${basepath}/Eyer3rdpart/libyuv
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=../libyuv_install ../
