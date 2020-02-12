@@ -48,9 +48,19 @@ cmake -DCMAKE_INSTALL_PREFIX=../glfw_install ../
 make
 make install
 
-cd ../
 
 cd ../../
+
+cd Eyer3rdpart/libyuv
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=../libyuv_install ../
+make
+make install
+
+cd ../../
+cd ../
+
 
 if [ -d ./Lib ];then
     rm -rf Lib
