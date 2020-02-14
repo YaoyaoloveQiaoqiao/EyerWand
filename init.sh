@@ -34,7 +34,7 @@ make install
 cd ../../
 
 cd ${basepath}/Eyer3rdpart/libpng-1.6.37
-./configure --prefix=${basepath}/Eyer3rdpart/libpng-1.6.37/libpng_install
+./configure --enable-static --enable-shared --enable-pic --prefix=${basepath}/Eyer3rdpart/libpng-1.6.37/libpng_install
 make clean
 make -j4
 make install
