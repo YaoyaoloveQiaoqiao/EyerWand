@@ -7,17 +7,17 @@ echo ${basepath}
 
 git clone https://github.com/redknotmiaoyuqiao/Eyer3rdpart
 
-cd Eyer3rdpart/x264/
+cd ${basepath}/Eyer3rdpart/x264/
 
-./configure --prefix=./x264_install --enable-static --enable-shared
+./configure --prefix=${basepath}/Eyer3rdpart/x264/x264_install --enable-static --disable-shared --enable-pic
 make clean
 make -j4
 make install
 
 cd ../../
 
-cd Eyer3rdpart/ffmpeg_3.2.14/
-./configure --enable-static --enable-shared --prefix=./ffmpeg_install --enable-libx264 --enable-gpl --extra-cflags=-I../x264/x264_install/include/ --extra-ldflags=-L../x264/x264_install/lib/ 
+cd ${basepath}/Eyer3rdpart/ffmpeg_3.2.14/
+./configure --enable-static --disable-shared --prefix=./ffmpeg_install --enable-libx264 --enable-gpl --enable-pic --extra-libs=-ldl --extra-cflags=-I${basepath}/Eyer3rdpart/x264/x264_install/include/ --extra-ldflags=-L${basepath}/Eyer3rdpart/x264/x264_install/lib/
 
 make clean
 make -j4
@@ -25,7 +25,7 @@ make install
 
 cd ../../
 
-cd Eyer3rdpart/freetype-2.10.0
+cd ${basepath}/Eyer3rdpart/freetype-2.10.0
 ./configure --enable-static --enable-shared --prefix=${basepath}/Eyer3rdpart/freetype-2.10.0/freetype_install
 make clean
 make -j4
@@ -33,7 +33,7 @@ make install
 
 cd ../../
 
-cd Eyer3rdpart/libpng-1.6.37
+cd ${basepath}/Eyer3rdpart/libpng-1.6.37
 ./configure --prefix=${basepath}/Eyer3rdpart/libpng-1.6.37/libpng_install
 make clean
 make -j4
@@ -41,7 +41,7 @@ make install
 
 cd ../../
 
-cd Eyer3rdpart/glfw-3.3.2
+cd ${basepath}/Eyer3rdpart/glfw-3.3.2
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=../glfw_install ../
@@ -60,6 +60,8 @@ make install
 
 cd ../../
 cd ../
+
+cd ${basepath}
 
 
 if [ -d ./Lib ];then
@@ -81,6 +83,6 @@ cp -r Eyer3rdpart/libyuv/libyuv_install Lib/libyuv_install
 
 
 
-git clone https://github.com/redknotmiaoyuqiao/EyerLib
+# git clone https://github.com/redknotmiaoyuqiao/EyerLib
 
-git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
+# git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
