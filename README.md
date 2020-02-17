@@ -1,5 +1,7 @@
 # Eyer Wand
 
+### ！！！ 使用本软件之前，请先阅读根目录下 LICENSE.md 的许可证内容，在您认可并承诺遵守许可证的内容之后，方可使用。！！！
+
 # 安装和使用 How-to-install
 
 ing...
@@ -46,16 +48,3 @@ sh init.sh
 # 百科 Wiki
 
 ing...
-
-
-# License
-
-Copyright 2019 Miao Yuqiao
-
-Licensed under the "Anti 996", License Version 1.0 (Draft) (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-````
-https://unpkg.com/tsmon@0.4.2/LICENSE
-````
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
