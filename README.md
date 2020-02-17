@@ -1,5 +1,9 @@
 # Eyer Wand
 
+# 安装和使用 How-to-install
+
+ing...
+
 # 构建 Build
 
 我们是在 Unix-like 的环境里开发的 EyerWand。
