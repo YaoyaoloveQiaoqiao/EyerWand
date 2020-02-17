@@ -83,6 +83,6 @@ cp -r Eyer3rdpart/libyuv/libyuv_install Lib/libyuv_install
 
 
 
-# git clone https://github.com/redknotmiaoyuqiao/EyerLib
+git clone https://github.com/redknotmiaoyuqiao/EyerLib
 
-# git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
+git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
