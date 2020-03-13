@@ -1,5 +1,3 @@
-export PATH=/c/Cmake/bin:$PATH
-
 if [ -d ./Eyer3rdpart ];then 
     rm -rf Eyer3rdpart
 fi
@@ -44,7 +42,7 @@ make install
 cd ${basepath}/Eyer3rdpart/glfw-3.3.2
 mkdir build
 cd build
-cmake -G"Unix Makefiles" -DCMAKE_INSTALL_PREFIX=../glfw_install ../
+$CMAKE_HOME/bin/cmake -G"Unix Makefiles" -DCMAKE_INSTALL_PREFIX=../glfw_install ../
 make clean
 make -j4
 make install
@@ -52,7 +50,7 @@ make install
 cd ${basepath}/Eyer3rdpart/libyuv
 mkdir build
 cd build
-cmake -G"Unix Makefiles" -DCMAKE_INSTALL_PREFIX=../libyuv_install ../
+$CMAKE_HOME/bin/cmake -G"Unix Makefiles" -DCMAKE_INSTALL_PREFIX=../libyuv_install ../
 make clean
 make -j4
 make install

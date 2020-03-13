@@ -10,7 +10,7 @@ rm -rf install
 
 cd build_a
 
-cmake -G"Unix Makefiles" ../
+$CMAKE_HOME/bin/cmake -G"Unix Makefiles" ../
 make -j4
 make install
 

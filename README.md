@@ -27,12 +27,14 @@ But if you need build EyerWand by yourself, you hava to install git, cmake, and 
 
 ````
 sh init.sh
+sh build_lib.sh
 ````
 
 ## Mac
 
 ````
 sh init.sh
+sh build_lib.sh
 ````
 
 ## Windows
@@ -41,8 +43,28 @@ sh init.sh
 
 In windows, you hava to install Msys2 first.
 
+如果你是新安装的 Msys2，那么你要先安装这些软件。
+
+If you are newer Msys2 user, you hava to install these pkg.
+
 ````
-sh init.sh
+pacman -Su
+pacman -S git
+pacman -S mingw-w64-x86_64-toolchain
+pacman -S yasm
+pacman -S nasm
+pacman -S base-devel
+````
+
+此外，我们还需要 cmake，我们经过测试发现 Msys2 包管理中的 cmake 存在一些问题，因此，我们建议你在 Windows 下安装 cmake，然后在 Msys2 中引用。
+````
+export CMAKE_HOME=/c/cmake
+````
+
+````
+git clone https://github.com/redknotmiaoyuqiao/EyerWand
+sh init_msys.sh
+sh build_lib_msys.sh
 ````
 
 # 百科 Wiki
