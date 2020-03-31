@@ -1,9 +1,9 @@
 cd Lib
-rm -rf EyerLib
+rm -rf MBLib
 cd ../
 
-cd EyerLib
-cd Lib
+cd MBLib
+cd MBLib
 mkdir build_a
 
 rm -rf install
@@ -20,4 +20,4 @@ rm -rf build_a
 cd ..
 cd ..
 
-cp -r EyerLib/Lib/install/ Lib/EyerLib
+cp -r MBLib/MBLib/install/ Lib/MBLib

@@ -1,4 +1,4 @@
-# Eyer Wand
+# MB Wand
 
 ### ！！！ 使用本软件之前，请先阅读根目录下 LICENSE.md 的许可证内容，在您认可并承诺遵守许可证的内容之后，方可使用。！！！
 
@@ -8,20 +8,20 @@ ing...
 
 # 构建 Build
 
-我们是在 Unix-like 的环境里开发的 EyerWand。
+我们是在 Unix-like 的环境里开发的 MBWand。
 
-建议你使用我们已经编译好的版本，点击[这里](https://github.com/redknotmiaoyuqiao/EyerWand "prebuild")下载。
+建议你使用我们已经编译好的版本，点击[这里](https://github.com/redknotmiaoyuqiao/MBWand "prebuild")下载。
 
-但是如果你想自己编译 EyerWand 也可以，你需要事先安装 git， cmake， 和 make 。
+但是如果你想自己编译 MBWand 也可以，你需要事先安装 git， cmake， 和 make 。
 
 ----
 
-We developed EyerWand under Unix-like environment. 
+We developed MBWand under Unix-like environment. 
 
-We recommend you use our prebuild release in [here](https://github.com/redknotmiaoyuqiao/EyerWand "prebuild").
+We recommend you use our prebuild release in [here](https://github.com/redknotmiaoyuqiao/MBWand "prebuild").
 
 
-But if you need build EyerWand by yourself, you hava to install git, cmake, and make first.
+But if you need build MBWand by yourself, you hava to install git, cmake, and make first.
 
 ## Linux
 
@@ -62,7 +62,7 @@ export CMAKE_HOME=/c/cmake
 ````
 
 ````
-git clone https://github.com/redknotmiaoyuqiao/EyerWand
+git clone https://github.com/redknotmiaoyuqiao/MBWand
 sh init_msys.sh
 sh build_lib_msys.sh
 ````

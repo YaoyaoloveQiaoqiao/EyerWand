@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EyerWandSharp\EyerWandSharp.csproj" />
+    <ProjectReference Include="..\MBWandSharp\MBWandSharp.csproj" />
   </ItemGroup>
 
 </Project>

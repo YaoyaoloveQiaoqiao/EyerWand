@@ -1,18 +1,18 @@
-﻿using System;
-using EyerWandSharp;
+using System;
+using MBWandSharp;
 
-namespace EyerWandSharpTest
+namespace MBWandSharpTest
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(EyerWand.getVersion());
+            Console.WriteLine(MBWand.getVersion());
 
-            EyerWandBuilder eyerWandBuilder = new EyerWandBuilder("./test.mp4", 1280, 720, 30);
-            EyerWandVideoTrack videoTrack = new EyerWandVideoTrack();
-            EyerWandVideoLayer videoLayer = new EyerWandVideoLayer(0, 30*5);
-            EyerWandVideoFragment videoFragment = new EyerWandVideoFragment("./M_1280_720.mp4");
+            MBWandBuilder eyerWandBuilder = new MBWandBuilder("./test.mp4", 1280, 720, 30);
+            MBWandVideoTrack videoTrack = new MBWandVideoTrack();
+            MBWandVideoLayer videoLayer = new MBWandVideoLayer(0, 30*5);
+            MBWandVideoFragment videoFragment = new MBWandVideoFragment("./M_1280_720.mp4");
 
             videoLayer.addFragment(videoFragment.fragment);
             videoTrack.addLayer(videoLayer.layer);
