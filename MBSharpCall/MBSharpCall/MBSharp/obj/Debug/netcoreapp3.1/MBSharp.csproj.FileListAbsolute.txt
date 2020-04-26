@@ -1,0 +1,8 @@
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp3.1\MBSharp.AssemblyInfoInputs.cache
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp3.1\MBSharp.AssemblyInfo.cs
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp3.1\MBSharp.deps.json
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp3.1\MBSharp.dll
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp3.1\MBSharp.pdb
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp3.1\MBSharp.dll
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp3.1\MBSharp.pdb
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp3.1\MBSharp.csprojAssemblyReference.cache

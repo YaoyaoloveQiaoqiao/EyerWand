@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "MBSharpTest/1.0.0": {
+        "dependencies": {
+          "MBSharp": "1.0.0"
+        },
+        "runtime": {
+          "MBSharpTest.dll": {}
+        }
+      },
+      "MBSharp/1.0.0": {
+        "runtime": {
+          "MBSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MBSharpTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MBSharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

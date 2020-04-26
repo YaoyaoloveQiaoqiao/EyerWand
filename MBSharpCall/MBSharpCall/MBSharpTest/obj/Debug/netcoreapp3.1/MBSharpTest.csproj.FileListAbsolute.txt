@@ -1,0 +1,14 @@
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.exe
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.deps.json
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.runtimeconfig.json
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.runtimeconfig.dev.json
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.dll
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharpTest.pdb
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharp.dll
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.1\MBSharp.pdb
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.csprojAssemblyReference.cache
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.AssemblyInfoInputs.cache
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.AssemblyInfo.cs
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.csproj.CopyComplete
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.dll
+C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.1\MBSharpTest.pdb
