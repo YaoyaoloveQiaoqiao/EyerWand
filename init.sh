@@ -5,7 +5,7 @@ fi
 basepath=$(cd `dirname $0`; pwd)
 echo ${basepath}
 
-git clone https://github.com/redknotmiaoyuqiao/Eyer3rdpart
+git clone https://github.com/redknotmiaoyuqiao/Eyer3rdpart --depth=1
 
 cd ${basepath}/Eyer3rdpart/x264/
 
@@ -83,6 +83,6 @@ cp -r Eyer3rdpart/libyuv/libyuv_install Lib/libyuv_install
 
 
 
-git clone https://github.com/redknotmiaoyuqiao/EyerLib
-git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
-git clone https://github.com/redknotmiaoyuqiao/EyerWandEditor
+git clone https://github.com/redknotmiaoyuqiao/EyerLib --depth=1
+git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand --depth=1
+git clone https://github.com/redknotmiaoyuqiao/EyerWandEditor --depth=1
