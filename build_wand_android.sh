@@ -1,7 +1,8 @@
 basepath=$(cd `dirname $0`; pwd)
 echo ${basepath}
 
-NDK=/Users/lichi/ndk_test/android-ndk-r21
+# NDK=/Users/lichi/ndk_test/android-ndk-r21
+# NDK=/home/redknot/NDK/android-ndk-r21
 
 cd Lib
 rm -rf EyerWand

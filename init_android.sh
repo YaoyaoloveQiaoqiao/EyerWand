@@ -8,9 +8,9 @@ echo ${basepath}
 git clone https://gitee.com/redknot/Eyer3rdpart
 
 ARCH=aarch64
-HOST_TAG=darwin-x86_64
+HOST_TAG=linux-x86_64
 HOST=aarch64-linux-android
-NDK=/Users/lichi/ndk_test/android-ndk-r21
+# NDK=/home/redknot/NDK/android-ndk-r21
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
@@ -46,6 +46,13 @@ cd ${basepath}/Eyer3rdpart/ffmpeg_3.2.14/
 ./configure \
 --enable-static \
 --disable-shared \
+--disable-ffmpeg \
+--disable-ffplay \
+--disable-ffprobe \
+--disable-ffserver \
+--disable-avdevice \
+--disable-doc \
+--disable-symver \
 --prefix=./ffmpeg_install \
 --enable-libx264 \
 --enable-gpl \
@@ -55,7 +62,7 @@ cd ${basepath}/Eyer3rdpart/ffmpeg_3.2.14/
 --enable-cross-compile \
 --target-os=android \
 --arch=arm64 \
---cc=CC \
+--cc=$TOOLCHAIN/bin/aarch64-linux-android21-clang \
 --cross-prefix=$TOOLCHAIN/bin/aarch64-linux-android-
 
 make clean
@@ -71,6 +78,9 @@ cd ${basepath}/Eyer3rdpart/freetype-2.10.0
 ./configure \
 --enable-static \
 --enable-shared \
+--without-zlib \
+--with-png=no \
+--with-harfbuzz=no \
 --host=${HOST} \
 --prefix=${basepath}/Eyer3rdpart/freetype-2.10.0/freetype_install
 
