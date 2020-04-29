@@ -94,7 +94,7 @@ sh build_wand_android.sh
 
 之后用 Android Studio 打开 EyerWandEditor 里的 Android 工程，进行编译和打包就行了
 
-
+注意，默认使用 armv7a 的架构进行编译
 
 # 百科 Wiki
 
