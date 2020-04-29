@@ -10,7 +10,6 @@ git clone https://gitee.com/redknot/Eyer3rdpart
 ARCH=aarch64
 HOST_TAG=darwin-x86_64
 HOST=aarch64-linux-android
-NDK=/Users/lichi/ndk_test/android-ndk-r21
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
@@ -117,4 +116,4 @@ cp -r Eyer3rdpart/ffmpeg_3.2.14/ffmpeg_install Lib/ffmpeg_install
 # cp -r Eyer3rdpart/glfw-3.3.2/glfw_install Lib/glfw_install
 cp -r Eyer3rdpart/freetype-2.10.0/freetype_install Lib/freetype_install
 cp -r Eyer3rdpart/libpng-1.6.37/libpng_install Lib/libpng_install
-cp -r Eyer3rdpart/libyuv/libyuv_install Lib/libyuv_install
+# cp -r Eyer3rdpart/libyuv/libyuv_install Lib/libyuv_install

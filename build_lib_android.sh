@@ -10,8 +10,6 @@ rm -rf install
 
 cd build_a
 
-NDK=/Users/lichi/ndk_test/android-ndk-r21
-
 cmake ../ -DCMAKE_TOOLCHAIN_FILE=$NDK/build/cmake/android.toolchain.cmake -DANDROID_ABI=armeabi-v7a -DANDROID_NATIVE_API_LEVEL=21
 make
 make install
