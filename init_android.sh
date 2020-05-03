@@ -7,21 +7,31 @@ echo ${basepath}
 
 git clone https://gitee.com/redknot/Eyer3rdpart
 
-ARCH=aarch64
+
 HOST_TAG=linux-x86_64
-HOST=aarch64-linux-android
-# NDK=/home/redknot/NDK/android-ndk-r21
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
-export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
-export AS=$TOOLCHAIN/bin/aarch64-linux-android-as
-export NM=$TOOLCHAIN/bin/aarch64-linux-android-nm
-export CC=$TOOLCHAIN/bin/aarch64-linux-android21-clang
-export CXX=$TOOLCHAIN/bin/aarch64-linux-android21-clang++
-export LD=$TOOLCHAIN/bin/aarch64-linux-android-ld
-export RANLIB=$TOOLCHAIN/bin/aarch64-linux-android-ranlib
-export STRIP=$TOOLCHAIN/bin/aarch64-linux-android-strip
 
+
+# Only choose one of these, depending on your device...
+# export TARGET=aarch64-linux-android
+export TARGET=armv7a-linux-androideabi
+# export TARGET=i686-linux-android
+# export TARGET=x86_64-linux-android
+
+
+# Set this to your minSdkVersion.
+export API=21
+
+export CC=$TOOLCHAIN/bin/$TARGET$API-clang
+export CXX=$TOOLCHAIN/bin/$TARGET$API-clang++
+
+# export AR=$TOOLCHAIN/bin/$TARGET-ar
+export AR=$TOOLCHAIN/bin/arm-linux-androideabi-ar
+export AS=$TOOLCHAIN/bin/arm-linux-androideabi-as
+export LD=$TOOLCHAIN/bin/arm-linux-androideabi-ld
+export RANLIB=$TOOLCHAIN/bin/arm-linux-androideabi-ranlib
+export STRIP=$TOOLCHAIN/bin/arm-linux-androideabi-strip
 
 cd ${basepath}/Eyer3rdpart/x264/
 
@@ -30,8 +40,8 @@ cd ${basepath}/Eyer3rdpart/x264/
 --enable-static \
 --disable-shared \
 --enable-pic --enable-strip --disable-asm --disable-cli --disable-opencl \
---host=${HOST} \
---cross-prefix=$TOOLCHAIN/bin/aarch64-linux-android- 
+--host=${TARGET} \
+# --cross-prefix=$TOOLCHAIN/bin/aarch64-linux-android- 
 
 make clean
 make -j4
@@ -57,13 +67,15 @@ cd ${basepath}/Eyer3rdpart/ffmpeg_3.2.14/
 --enable-libx264 \
 --enable-gpl \
 --enable-pic \
+--disable-neon \
 --extra-cflags=-I${basepath}/Eyer3rdpart/x264/x264_install/include/ \
 --extra-ldflags=-L${basepath}/Eyer3rdpart/x264/x264_install/lib/ \
 --enable-cross-compile \
 --target-os=android \
---arch=arm64 \
---cc=$TOOLCHAIN/bin/aarch64-linux-android21-clang \
---cross-prefix=$TOOLCHAIN/bin/aarch64-linux-android-
+--arch=arm \
+--nm=$TOOLCHAIN/bin/arm-linux-androideabi-nm \
+--cc=$TOOLCHAIN/bin/$TARGET$API-clang \
+--cross-prefix=$TOOLCHAIN/bin/arm-linux-androideabi-
 
 make clean
 make -j4
@@ -81,7 +93,7 @@ cd ${basepath}/Eyer3rdpart/freetype-2.10.0
 --without-zlib \
 --with-png=no \
 --with-harfbuzz=no \
---host=${HOST} \
+--host=${TARGET} \
 --prefix=${basepath}/Eyer3rdpart/freetype-2.10.0/freetype_install
 
 make clean
@@ -103,7 +115,7 @@ cd ${basepath}/Eyer3rdpart/libpng-1.6.37
 --enable-static \
 --enable-shared \
 --enable-pic \
---host=${HOST} \
+--host=${TARGET} \
 --prefix=${basepath}/Eyer3rdpart/libpng-1.6.37/libpng_install
 
 make clean
@@ -114,7 +126,6 @@ make install
 
 
 cd ${basepath}
-
 
 if [ -d ./Lib ];then
     rm -rf Lib
