@@ -69,6 +69,7 @@ cd armeabi-v7a
 cd ${basepath}
 
 cp ${basepath}/Lib/EyerVideoWand/lib/libEyerWandJni.so ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/jniLibs/armeabi-v7a/libEyerWandJni.so
+# cp ${basepath}/Lib/EyerVideoWand/lib/libEyerWand.so ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/jniLibs/armeabi-v7a/libEyerWand.so
 
 cd ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/jniLibs/armeabi-v7a
 ls -lh
