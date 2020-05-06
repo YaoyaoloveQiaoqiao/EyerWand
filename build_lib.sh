@@ -1,6 +1,17 @@
+basepath=$(cd `dirname $0`; pwd)
+echo ${basepath}
+
+cd ${basepath}
+
+if [ ! -d ./Lib ];then 
+    mkdir Lib
+fi
+
 cd Lib
 rm -rf EyerLib
 cd ../
+
+cd ${basepath}
 
 cd EyerLib
 cd Lib

@@ -67,6 +67,35 @@ sh init_msys.sh
 sh build_lib_msys.sh
 ````
 
+## Android 
+
+目前我们使用 Ubuntu 作为宿主环境，其他平台可能有问题。
+
+开始之前，请先设置 NDK 的位置
+
+````
+export NDK=/Users/lichi/ndk_test/android-ndk-r21
+````
+
+首先运行 init_android.sh , 来下载第三方库，和对第三方库进行交叉编译。
+````
+sh init_android.sh
+````
+
+然后再运行 build_lib_android.sh 对 EyerLib 进行编译
+````
+sh build_lib_android.sh
+````
+
+然后再运行 build_wand_android.sh 对 EyerVideoWand 进行编译
+````
+sh build_wand_android.sh
+````
+
+之后用 Android Studio 打开 EyerWandEditor 里的 Android 工程，进行编译和打包就行了
+
+注意，默认使用 armv7a 的架构进行编译
+
 # 百科 Wiki
 
 ing...
