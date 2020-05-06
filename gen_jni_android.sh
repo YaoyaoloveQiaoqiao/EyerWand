@@ -5,7 +5,7 @@ cd ${basepath}
 
 cd ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/java/
 
-javac -h ./ com/eyer/eyer_wand_editor_lib/EyerWandNative.java
+javac -h ./ com/eyer/eyer_wand_editor_lib/EyerWandNative.java -classpath ${ANDROID_SDK_HOME}/platforms/android-22/android.jar:.
 
 cd com/eyer/eyer_wand_editor_lib/
 
