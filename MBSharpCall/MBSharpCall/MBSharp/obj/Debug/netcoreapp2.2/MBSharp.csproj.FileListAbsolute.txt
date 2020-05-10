@@ -5,3 +5,11 @@ C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.Assem
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.AssemblyInfo.cs
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.dll
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.pdb
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp2.2\MBSharp.deps.json
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp2.2\MBSharp.dll
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\bin\Debug\netcoreapp2.2\MBSharp.pdb
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.csprojAssemblyReference.cache
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.AssemblyInfoInputs.cache
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.AssemblyInfo.cs
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.dll
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharp\obj\Debug\netcoreapp2.2\MBSharp.pdb

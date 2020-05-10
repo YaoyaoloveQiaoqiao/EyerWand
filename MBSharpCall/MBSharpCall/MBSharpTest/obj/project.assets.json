@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharpTest\\MBSharpTest.csproj",
+      "projectUniqueName": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharpTest\\MBSharpTest.csproj",
       "projectName": "MBSharpTest",
-      "projectPath": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharpTest\\MBSharpTest.csproj",
+      "projectPath": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharpTest\\MBSharpTest.csproj",
       "packagesPath": "C:\\Users\\yao\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharpTest\\obj\\",
+      "outputPath": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharpTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yao\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {
-              "projectPath": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj"
+            "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {
+              "projectPath": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj"
             }
           }
         }

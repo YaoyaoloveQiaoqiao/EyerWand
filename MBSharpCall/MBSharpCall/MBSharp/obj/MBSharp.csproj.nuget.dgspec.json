@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {}
+    "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {}
   },
   "projects": {
-    "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {
+    "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj",
+        "projectUniqueName": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj",
         "projectName": "MBSharp",
-        "projectPath": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj",
+        "projectPath": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\MBSharp.csproj",
         "packagesPath": "C:\\Users\\yao\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\dll\\MBSharpCall\\MBSharpCall\\MBSharp\\obj\\",
+        "outputPath": "C:\\msys64\\home\\yao\\MB\\MBWand\\MBSharpCall\\MBSharpCall\\MBSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yao\\AppData\\Roaming\\NuGet\\NuGet.Config",

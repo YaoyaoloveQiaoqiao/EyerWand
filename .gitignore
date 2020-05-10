@@ -4,3 +4,14 @@ EyerLib/
 EyerVideoWand/
 Lib/
 .DS_Store
+
+MBLib/
+MBSharpCall/MBSharpCall/.vs/
+MBSharpCall/MBSharpCall/MBSharp/bin/
+MBSharpCall/MBSharpCall/MBSharp/obj/
+
+MBSharpCall/MBSharpCall/MBSharpTest/bin/
+MBSharpCall/MBSharpCall/MBSharpTest/obj/
+ MBVideoWand/
+ MBSharpCall/MBSharpCall/MBSharpTest/bin
+ MBSharpCall/MBSharpCall/MBSharpTest/obj

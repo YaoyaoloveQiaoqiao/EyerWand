@@ -12,3 +12,17 @@ C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTe
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.csproj.CopyComplete
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.dll
 C:\git\dll\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.pdb
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.exe
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.deps.json
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.runtimeconfig.json
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.runtimeconfig.dev.json
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.dll
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharpTest.pdb
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharp.dll
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\bin\Debug\netcoreapp3.0\MBSharp.pdb
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.csprojAssemblyReference.cache
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.AssemblyInfoInputs.cache
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.AssemblyInfo.cs
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.csproj.CopyComplete
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.dll
+C:\msys64\home\yao\MB\MBWand\MBSharpCall\MBSharpCall\MBSharpTest\obj\Debug\netcoreapp3.0\MBSharpTest.pdb
