@@ -90,7 +90,7 @@ cd ../../
 cd ${basepath}/Eyer3rdpart/freetype-2.10.0
 ./configure \
 --enable-static \
---enable-shared \
+--disable-shared \
 --without-zlib \
 --with-png=no \
 --with-harfbuzz=no \
