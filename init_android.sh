@@ -8,8 +8,8 @@ echo ${basepath}
 git clone https://gitee.com/redknot/Eyer3rdpart
 
 
-HOST_TAG=linux-x86_64
-# HOST_TAG=darwin-x86_64
+# HOST_TAG=linux-x86_64
+HOST_TAG=darwin-x86_64
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 
@@ -90,7 +90,7 @@ cd ../../
 cd ${basepath}/Eyer3rdpart/freetype-2.10.0
 ./configure \
 --enable-static \
---enable-shared \
+--disable-shared \
 --without-zlib \
 --with-png=no \
 --with-harfbuzz=no \
