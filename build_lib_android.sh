@@ -41,8 +41,8 @@ cp -r EyerLib/Lib/install/ Lib/EyerLib
 
 cd ${basepath}/Lib/EyerLib/lib
 
-# HOST_TAG=linux-x86_64
-HOST_TAG=darwin-x86_64
+HOST_TAG=linux-x86_64
+# HOST_TAG=darwin-x86_64
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 
