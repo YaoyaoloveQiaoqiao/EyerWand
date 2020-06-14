@@ -44,6 +44,7 @@ fi
 cp -r ${basepath}/EyerVideoWand/EyerVideoWand/install/ ${basepath}/Lib/EyerVideoWand
 
 cd ${basepath}/Lib/EyerVideoWand/lib
+pwd
 ls -lh
 
 echo "================Gen so libEyerWandJni.so================"
@@ -72,4 +73,5 @@ cp ${basepath}/Lib/EyerVideoWand/lib/libEyerWandJni.so ${basepath}/EyerWandEdito
 # cp ${basepath}/Lib/EyerVideoWand/lib/libEyerWand.so ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/jniLibs/armeabi-v7a/libEyerWand.so
 
 cd ${basepath}/EyerWandEditor/EyerWandEditorAndroid/eyer_wand_editor_lib/src/main/jniLibs/armeabi-v7a
+pwd
 ls -lh
