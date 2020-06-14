@@ -69,6 +69,7 @@ $AR x libEyerImg.a
 $AR x libEyerThread.a
 $AR x libEyerType.a
 $AR x libEyerYUV.a
+$AR x libEyerVideoTweenAnimation.a
 
 $AR rcs libEyerLib.a *.o
 #$CC -o libEyerLib.a *.o
