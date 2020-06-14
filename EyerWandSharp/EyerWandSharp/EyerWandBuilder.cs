@@ -13,6 +13,12 @@ namespace EyerWandSharp
         [DllImport("libEyerWand.dll")]
         private extern static int eyer_wand_csharp_builder_uninit(IntPtr builderP);
 
+        [DllImport("libEyerWand.dll")]
+        private extern static int eyer_wand_csharp_builder_process(IntPtr builderP);
+
+        [DllImport("libEyerWand.dll")]
+        private extern static int eyer_wand_csharp_builder_add_video_track(IntPtr builderP, IntPtr videoTrackP);
+        
         private IntPtr builderP;
 
 
@@ -23,10 +29,17 @@ namespace EyerWandSharp
             builderP = eyer_wand_csharp_builder_init(path, width, height, fps);
         }
 
-        public int addVideoTrack(EyerWandVideoTrack videoTrack)
+        public int addVideoTrack(IntPtr videoTrack)
         {
-            this.videoTrack = new EyerWandVideoTrack(videoTrack);
+            //todo EyerWandVideoTrack（videoTrack）对象拷贝
+            //this.videoTrack = new EyerWandVideoTrack(videoTrack);
+            eyer_wand_csharp_builder_add_video_track(this.builderP, videoTrack);
             return 0;
+        }
+
+        public int process()
+        {
+            return eyer_wand_csharp_builder_process(builderP);
         }
 
 
