@@ -24,7 +24,23 @@ cd build_a
 # NDK=/Users/lichi/ndk_test/android-ndk-r21
 # NDK=/home/redknot/NDK/android-ndk-r21
 
-cmake ../ -DCMAKE_TOOLCHAIN_FILE=$NDK/build/cmake/android.toolchain.cmake -DANDROID_ABI=armeabi-v7a -DANDROID_NATIVE_API_LEVEL=21
+cmake ../ \
+-DCMAKE_TOOLCHAIN_FILE=$NDK/build/cmake/android.toolchain.cmake \
+-DANDROID_ABI=armeabi-v7a \
+-DANDROID_NATIVE_API_LEVEL=21 \
+-DEyerAV=ON \
+-DEyerCore=ON \
+-DEyerCrop=ON \
+-DEyerGLContext=ON \
+-DEyerGLShader=ON \
+-DEyerGPUDomino=ON \
+-DEyerImg=ON \
+-DEyerThread=ON \
+-DEyerType=ON \
+-DEyerYUV=ON \
+-DEyerVideoTweenAnimation=ON \
+
+
 make -j4
 make install
 
@@ -41,8 +57,19 @@ cp -r EyerLib/Lib/install/ Lib/EyerLib
 
 cd ${basepath}/Lib/EyerLib/lib
 
-HOST_TAG=linux-x86_64
+files=$(ls $NDK/toolchains/llvm/prebuilt/)
+HOST_TAG=$""
+for filename in $files
+do
+    echo $filename
+    HOST_TAG=$filename
+done
+
+# HOST_TAG=linux-x86_64
 # HOST_TAG=darwin-x86_64
+# HOST_TAG=windows-x86_64
+
+echo "HOST_TAG:"$HOST_TAG
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 

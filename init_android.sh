@@ -8,8 +8,20 @@ echo ${basepath}
 git clone https://gitee.com/redknot/Eyer3rdpart
 
 
-HOST_TAG=linux-x86_64
+
+files=$(ls $NDK/toolchains/llvm/prebuilt/)
+HOST_TAG=$""
+for filename in $files
+do
+    echo $filename
+    HOST_TAG=$filename
+done
+
+# HOST_TAG=linux-x86_64
 # HOST_TAG=darwin-x86_64
+# HOST_TAG=windows-x86_64
+
+echo "HOST_TAG:"$HOST_TAG
 
 export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 
