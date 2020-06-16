@@ -1,8 +1,15 @@
 basepath=$(cd `dirname $0`; pwd)
 echo ${basepath}
 
-# NDK=/Users/lichi/ndk_test/android-ndk-r21
-# NDK=/home/redknot/NDK/android-ndk-r21
+cd ${basepath}
+if [ ! -d ./EyerVideoWand ];then 
+    git clone https://github.com/redknotmiaoyuqiao/EyerVideoWand
+fi
+cd ${basepath}
+if [ ! -d ./EyerWandEditor ];then 
+    git clone https://github.com/redknotmiaoyuqiao/EyerWandEditor
+fi
+cd ${basepath}
 
 cd Lib
 rm -rf EyerWand
