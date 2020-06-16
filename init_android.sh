@@ -139,7 +139,6 @@ make install
 
 
 
-
 cd ${basepath}/Eyer3rdpart/libyuv
 mkdir build
 cd build
