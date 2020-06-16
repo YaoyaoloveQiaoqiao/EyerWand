@@ -1,12 +1,11 @@
+basepath=$(cd `dirname $0`; pwd)
+echo ${basepath}
+
 if [ -d ./Eyer3rdpart ];then 
     rm -rf Eyer3rdpart
 fi
 
-basepath=$(cd `dirname $0`; pwd)
-echo ${basepath}
-
 git clone https://gitee.com/redknot/Eyer3rdpart
-
 
 
 files=$(ls $NDK/toolchains/llvm/prebuilt/)
@@ -45,6 +44,7 @@ export AS=$TOOLCHAIN/bin/arm-linux-androideabi-as
 export LD=$TOOLCHAIN/bin/arm-linux-androideabi-ld
 export RANLIB=$TOOLCHAIN/bin/arm-linux-androideabi-ranlib
 export STRIP=$TOOLCHAIN/bin/arm-linux-androideabi-strip
+
 
 cd ${basepath}/Eyer3rdpart/x264/
 
@@ -134,7 +134,6 @@ cd ${basepath}/Eyer3rdpart/libpng-1.6.37
 make clean
 make -j4
 make install
-
 
 
 
