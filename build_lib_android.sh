@@ -11,6 +11,12 @@ cd Lib
 rm -r EyerLib
 cd ../
 
+cd ${basepath}
+
+if [ ! -d ./EyerLib ];then 
+    git clone https://github.com/redknotmiaoyuqiao/EyerLib
+fi
+
 cd ${basepath}/EyerLib/Lib
 
 mkdir build_a
@@ -39,6 +45,9 @@ cmake ../ \
 -DEyerType=ON \
 -DEyerYUV=ON \
 -DEyerVideoTweenAnimation=ON \
+-DEyerGLContext=ON \
+-DEyerGLAD=OFF \
+-DEyerGLWindow=OFF
 
 
 make -j4
